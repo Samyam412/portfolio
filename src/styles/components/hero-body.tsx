@@ -14,7 +14,9 @@ export function HeroBody() {
                 <Image src={"https://utfs.io/f/gI5KGu6XhByvdD1cCsrOWNmvbErdGK0JLZ3qy6ea5woh8iYC"} alt="Profile Image"
                     className="object-cover rounded-full " fill />
             </div>
-            <HeroButton />
+            <HeroButton  >
+                Hello, I'm Samyam
+            </HeroButton>
         </div>
         <div className={`text-7xl  `}>
             <h1>Full Stack </h1>

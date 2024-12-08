@@ -1,12 +1,11 @@
 "use client"
 
-const ButtonWrapper = () => {
-    return (
-        <RoundedSlideButton />
-    );
-};
+import { ReactNode } from "react";
 
-const RoundedSlideButton = () => {
+interface ButtonProps {
+    children: ReactNode
+}
+const ButtonWrapper: React.FC<ButtonProps> = ({ children }) => {
     return (
         <button
             className={`
@@ -26,7 +25,7 @@ const RoundedSlideButton = () => {
         hover:before:translate-y-[0%]
         active:scale-95`}
         >
-            Hello, I'm Samyam
+            {children}
         </button>
     );
 };
