@@ -15,7 +15,7 @@ export function HeroBody() {
                     className="object-cover rounded-full " fill />
             </div>
             <HeroButton  >
-                Hello, I'm Samyam
+                Hello, I&apos;m Samyam
             </HeroButton>
         </div>
         <div className={`text-7xl  `}>
