@@ -21,7 +21,7 @@ export default function RootLayout({
     children: React.ReactNode;
 }) {
     return (
-        <html lang="en" className={`${roboto.className} text-[#FFFFE6] text-lg bg-[#15191B]`}>
+        <html lang="en" className={`${roboto.className} text-[#FFFFE6] text-lg bg-[#0A0A0A]`}>
             <body>{children}</body>
         </html>
     );
