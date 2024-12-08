@@ -1,6 +1,7 @@
 import "~/styles/globals.css";
 
 import { Roboto } from "next/font/google";
+import { Toaster } from "~/components/ui/toaster";
 
 
 const roboto = Roboto({
@@ -23,6 +24,7 @@ export default function RootLayout({
     return (
         <html lang="en" className={`${roboto.className} text-[#FFFFE6] text-lg bg-[#0A0A0A]`}>
             <body>{children}</body>
+            <Toaster/>
         </html>
     );
 }
