@@ -1,6 +1,7 @@
 import { Aclonica } from "next/font/google"
 import Image from "next/image"
 import HeroButton from "./hero-button"
+import Ripple from "~/components/ui/ripple"
 const acnolica = Aclonica({
     weight: "400",
     subsets: ["latin"]
@@ -8,7 +9,7 @@ const acnolica = Aclonica({
 )
 export function HeroBody() {
 
-    return <div className={`${acnolica.className} h-full flex flex-col gap-3 text-center justify-center items-center`} >
+    return <div className={`${acnolica.className} relative h-full flex flex-col gap-3 text-center justify-center items-center`} >
         <div className="flex justify-center items-center gap-3">
             <div className="relative size-14 rounded-full hover:scale-125 transition-transform duration-200 hover:rotate-6  ">
                 <Image src={"https://utfs.io/f/gI5KGu6XhByvdD1cCsrOWNmvbErdGK0JLZ3qy6ea5woh8iYC"} alt="Profile Image"
@@ -27,5 +28,6 @@ export function HeroBody() {
             I create digital experiences that balances <br />
             <span className="text-amber-500">performance</span> with <span className="text-red-500">user satisfaction</span>
         </h1>
+        <Ripple mainCircleSize={700} numCircles={5} />
     </div >
 }
