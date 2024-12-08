@@ -1,5 +1,5 @@
 export function HeroBody() {
-    return <div>
+    return <div className="h-full">
         Hero Body
     </div>
 }

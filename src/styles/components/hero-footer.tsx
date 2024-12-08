@@ -18,7 +18,7 @@ const DockItems: DockItems[] = [
 ]
 
 export function HeroFooter() {
-    return <div className=" border-t border-t-slate-700 h-16 flex items-center justify-between px-6 text-sm  ">
+    return <div className="border-t border-t-slate-700 h-16 flex items-center justify-between px-6 text-sm  ">
         <h1>Design, Code, Test</h1>
         <AnimatedDock items={DockItems} />
         <div className="hidden md:flex gap-2 md:items-center ">
