@@ -1,16 +1,16 @@
-"use client"
+"use client";
 
 import { ReactNode } from "react";
 
 interface ButtonProps {
-    children: ReactNode
+    children: ReactNode;
 }
 const ButtonWrapper: React.FC<ButtonProps> = ({ children }) => {
     return (
         <button
             className={`
-        relative text-sm z-0 flex items-center gap-2 overflow-hidden rounded-lg border-[1px] 
-        border-slate-500 px-4 py-2 font-semibold
+        relative z-0 flex items-center gap-2 overflow-hidden rounded-lg border-[1px] border-slate-500 
+        px-4 py-2 text-sm font-semibold
         uppercase text-primary transition-all duration-500
 
         before:absolute before:inset-0

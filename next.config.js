@@ -6,11 +6,9 @@ await import("./src/env.js");
 
 /** @type {import("next").NextConfig} */
 const config = {
-    images: {
-        domains: [
-            "utfs.io"
-    ]
-    }
+  images: {
+    domains: ["utfs.io"],
+  },
 };
 
 export default config;
