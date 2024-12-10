@@ -77,8 +77,12 @@ const Content = ({
                     <span className="rounded-full bg-indigo-600 px-2 py-1.5 text-xs font-medium text-white">
                         {featureInView.callout}
                     </span>
-                    <p className="my-3 text-5xl font-bold">{featureInView.title}</p>
-                    <p className="text-slate-600">{featureInView.description}</p>
+                    <p className="my-3 text-4xl font-bold">{featureInView.title}</p>
+                    <p
+                        className="text-slate-500"
+                        dangerouslySetInnerHTML={{ __html: featureInView.description }}
+                    />
+
                 </motion.div>
                 <motion.div
                     initial={{ opacity: 0, y: 25 }}
@@ -117,13 +121,23 @@ type FeatureType = {
 const features: FeatureType[] = [
     {
         id: 1,
-        callout: 'Full-Stack Developer',
-        title: 'Maheswori Group',
+        callout: 'Maheswori Group',
+        title: 'School Management System',
         description:
-            'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor iusto quaerat qui, illo incidunt suscipit fugiat distinctio officia earum eius quae officiis quis harum animi.',
+            `• Architected and built an enterprise-level multi-tenant school management platform with a clean, four-layer architecture using Next.js
+managing over 6000 student and staff data.<br/>
+• Designed and implemented scalable data access and persistence using PostgreSQL and Drizzle ORM.<br/>
+• Implemented Docker containerization, reducing deployment time by 60 %.<br/>
+• Followed repository pattern principles for maintainable and modular code.<br/>
+• Improved administrative efficiency by automating processes like attendance, fee collection, and reporting.`,
         contentPosition: 'r',
         Icon: <Eye />,
-        Images: ["https://images.unsplash.com/photo-1629198688000-71f23e745b6e?ixid=M3w2MjE1NTV8MHwxfHNlYXJjaHwxfHxwcm9kdWN0c3xlbnwwfHx8fDE3MzM3Mjk3ODZ8MA&ixlib=rb-4.0.3", "https://images.unsplash.com/photo-1676906242973-739577556387?ixid=M3w2MjE1NTV8MHwxfHNlYXJjaHwzfHxhZG1pbiUyMHBhbmVsfGVufDB8fHx8MTczMzcyOTg2M3ww&ixlib=rb-4.0.3"]
+        Images: [
+            "https://utfs.io/f/gI5KGu6XhByvHoWlFv7KJe0GxYR6lXW85ygtwQuIT3kcEjv7",
+            "https://utfs.io/f/gI5KGu6XhByvHJFMEK7KJe0GxYR6lXW85ygtwQuIT3kcEjv7",
+            "https://utfs.io/f/gI5KGu6XhByvG6cJPqz3YiIBJo78GT1MlnRPu9OVhLUHW2jd",
+            "https://utfs.io/f/gI5KGu6XhByvMh2rKmV30SpqHPXViLyTkCeAQU9xJl4cgadm"
+        ]
     },
     {
         id: 2,
@@ -131,7 +145,7 @@ const features: FeatureType[] = [
         title: "They're all here",
         description:
             'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor iusto quaerat qui, illo incidunt suscipit fugiat distinctio officia earum eius quae officiis quis harum animi.',
-        contentPosition: 'l',
+        contentPosition: 'r',
         Icon: <ZoomIn />,
         Images: ["https://images.unsplash.com/photo-1629198688000-71f23e745b6e?ixid=M3w2MjE1NTV8MHwxfHNlYXJjaHwxfHxwcm9kdWN0c3xlbnwwfHx8fDE3MzM3Mjk3ODZ8MA&ixlib=rb-4.0.3", "https://images.unsplash.com/photo-1676906242973-739577556387?ixid=M3w2MjE1NTV8MHwxfHNlYXJjaHwzfHxhZG1pbiUyMHBhbmVsfGVufDB8fHx8MTczMzcyOTg2M3ww&ixlib=rb-4.0.3"]
     }, {
@@ -140,7 +154,7 @@ const features: FeatureType[] = [
         title: "Let's party",
         description:
             'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor iusto quaerat qui, illo incidunt suscipit fugiat distinctio officia earum eius quae officiis quis harum animi.',
-        contentPosition: 'r',
+        contentPosition: 'l',
         Icon: <Triangle />,
         Images: ["https://images.unsplash.com/photo-1676906242973-739577556387?ixid=M3w2MjE1NTV8MHwxfHNlYXJjaHwzfHxhZG1pbiUyMHBhbmVsfGVufDB8fHx8MTczMzcyOTg2M3ww&ixlib=rb-4.0.3", "https://images.unsplash.com/photo-1629198688000-71f23e745b6e?ixid=M3w2MjE1NTV8MHwxfHNlYXJjaHwxfHxwcm9kdWN0c3xlbnwwfHx8fDE3MzM3Mjk3ODZ8MA&ixlib=rb-4.0.3"]
 
