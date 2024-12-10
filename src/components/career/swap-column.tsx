@@ -32,7 +32,7 @@ const SlidingFeatureDisplay = ({ featureInView }: { featureInView: FeatureType }
                 transition={{
                     type: 'spring',
                     stiffness: 400,
-                    damping: 25,
+                    damping: 20,
                 }}
                 className="h-fit w-3/5 rounded-xl p-8"
             >
@@ -121,15 +121,14 @@ type FeatureType = {
 const features: FeatureType[] = [
     {
         id: 1,
-        callout: 'Maheswori Group',
-        title: 'School Management System',
+        callout: 'Maheswori Group / Full-Stack Developer',
+        title: 'Multi-Tenant SMS',
         description:
-            `• Architected and built an enterprise-level multi-tenant school management platform with a clean, four-layer architecture using Next.js
-managing over 6000 student and staff data.<br/>
-• Designed and implemented scalable data access and persistence using PostgreSQL and Drizzle ORM.<br/>
-• Implemented Docker containerization, reducing deployment time by 60 %.<br/>
-• Followed repository pattern principles for maintainable and modular code.<br/>
-• Improved administrative efficiency by automating processes like attendance, fee collection, and reporting.`,
+            `- Developed a multi-tenant school management platform with Next.js for 6000+ users.<br/>  
+- Designed scalable data storage using PostgreSQL and Drizzle ORM.<br/>  
+- Reduced deployment time by 60% with Docker containerization.<br/>  
+- Applied repository pattern for maintainable, modular code.<br/>  
+- Automated attendance, fee collection, and reporting to enhance efficiency.<br/>  `,
         contentPosition: 'r',
         Icon: <Eye />,
         Images: [
@@ -141,10 +140,15 @@ managing over 6000 student and staff data.<br/>
     },
     {
         id: 2,
-        callout: 'Find people',
-        title: "They're all here",
+        callout: 'Shree Harikul / Associate Software Developer',
+        title: "School Management System",
         description:
-            'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor iusto quaerat qui, illo incidunt suscipit fugiat distinctio officia earum eius quae officiis quis harum animi.',
+            `- Redesigned a school management system with Next.js and role-based access control.<br/>  
+- Integrated Kinde Auth using scalable APIs and webhooks.<br/>  
+- Improved system metrics with telemetry and contextual API logging.<br/>  
+- Built a customizable Admin Panel for content management.<br/>  
+- Implemented AWS S3 for image uploads and Next.js Image for optimizations.<br/>  
+- Developed efficient API endpoints for fee and salary calculations, boosting scalability.<br/>  `,
         contentPosition: 'r',
         Icon: <ZoomIn />,
         Images: ["https://images.unsplash.com/photo-1629198688000-71f23e745b6e?ixid=M3w2MjE1NTV8MHwxfHNlYXJjaHwxfHxwcm9kdWN0c3xlbnwwfHx8fDE3MzM3Mjk3ODZ8MA&ixlib=rb-4.0.3", "https://images.unsplash.com/photo-1676906242973-739577556387?ixid=M3w2MjE1NTV8MHwxfHNlYXJjaHwzfHxhZG1pbiUyMHBhbmVsfGVufDB8fHx8MTczMzcyOTg2M3ww&ixlib=rb-4.0.3"]
@@ -153,7 +157,12 @@ managing over 6000 student and staff data.<br/>
         callout: 'Have fun',
         title: "Let's party",
         description:
-            'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor iusto quaerat qui, illo incidunt suscipit fugiat distinctio officia earum eius quae officiis quis harum animi.',
+            `- Built an e-commerce platform with an admin panel for managing orders, products, and sales.<br/>  
+- Integrated semantic product search using OpenAI API and Upstash vector DB.<br/>  
+- Automated order tracking via WhatsApp API and Zapier for business owners.<br/>  
+- Developed a real-time sales dashboard to track history and visualize growth.<br/>  
+- Increased monthly sales by 800 through automated message replies.<br/>  
+- Enhanced customer support with error handling using Sentry.<br/>  `,
         contentPosition: 'l',
         Icon: <Triangle />,
         Images: ["https://images.unsplash.com/photo-1676906242973-739577556387?ixid=M3w2MjE1NTV8MHwxfHNlYXJjaHwzfHxhZG1pbiUyMHBhbmVsfGVufDB8fHx8MTczMzcyOTg2M3ww&ixlib=rb-4.0.3", "https://images.unsplash.com/photo-1629198688000-71f23e745b6e?ixid=M3w2MjE1NTV8MHwxfHNlYXJjaHwxfHxwcm9kdWN0c3xlbnwwfHx8fDE3MzM3Mjk3ODZ8MA&ixlib=rb-4.0.3"]
