@@ -2,7 +2,7 @@
 
 import { type ReactNode } from "react";
 import { CalendarPlus, Github, Linkedin, Mail } from "lucide-react";
-import { Discord } from "./icons/discord";
+import Discord from "./icons/discord";
 import AnimatedDock from "./dock";
 
 export interface DockItems {
