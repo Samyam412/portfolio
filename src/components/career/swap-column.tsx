@@ -143,8 +143,30 @@ const features: FeatureType[] = [
             "https://utfs.io/f/gI5KGu6XhByvMh2rKmV30SpqHPXViLyTkCeAQU9xJl4cgadm"
         ]
     },
-    {
+    , {
         id: 2,
+        callout: 'Full-Stack Developer',
+        title: "Eze / ToysNpark",
+        description:
+            `- Built an e-commerce platform with an admin panel for managing orders, products, and sales.<br/>  
+- Integrated semantic product search using OpenAI API and Upstash vector DB.<br/>  
+- Automated order tracking via WhatsApp API and Zapier for business owners.<br/>  
+- Developed a real-time sales dashboard to track history and visualize growth.<br/>  
+- Increased monthly sales by 800 through automated message replies.<br/>  
+- Enhanced customer support with error handling using Sentry.<br/>  `,
+        contentPosition: 'r',
+        Images:
+            [
+                "https://utfs.io/f/gI5KGu6XhByvC9bRoBd8nScyRUxJWeAOsl4NkvquFP0GjhbT",
+                "https://utfs.io/f/gI5KGu6XhByvV1WgdtqHk9cq4dM8jN3nYPzTfbg7pKosGQRJ",
+                "https://utfs.io/f/gI5KGu6XhByvicBNZFkxPsuL9MBGEowyvq2jIiDeQXW0YSgN",
+                "https://utfs.io/f/gI5KGu6XhByvkxcH26IUnIcYSJt8iCeg19OMsXzEF4NaT3WA",
+                "https://utfs.io/f/gI5KGu6XhByvYt7KiRGrgZsf8mCzvUMGFo4dckPpw6aS9HnI"
+            ]
+
+    },
+    {
+        id: 3,
         callout: 'Associate Software Developer',
         title: "Shree Harikul",
 
@@ -155,29 +177,8 @@ const features: FeatureType[] = [
 - Built a customizable Admin Panel for content management.<br/>  
 - Implemented AWS S3 for image uploads and Next.js Image for optimizations.<br/>  
 - Developed efficient API endpoints for fee and salary calculations, boosting scalability.<br/>  `,
-        contentPosition: 'r',
-        Images: ["https://images.unsplash.com/photo-1629198688000-71f23e745b6e?ixid=M3w2MjE1NTV8MHwxfHNlYXJjaHwxfHxwcm9kdWN0c3xlbnwwfHx8fDE3MzM3Mjk3ODZ8MA&ixlib=rb-4.0.3", "https://images.unsplash.com/photo-1676906242973-739577556387?ixid=M3w2MjE1NTV8MHwxfHNlYXJjaHwzfHxhZG1pbiUyMHBhbmVsfGVufDB8fHx8MTczMzcyOTg2M3ww&ixlib=rb-4.0.3"]
-    }, {
-        id: 3,
-        callout: 'Full-Stack Developer',
-        title: "Eze / ToysNpark",
-        description:
-            `- Built an e-commerce platform with an admin panel for managing orders, products, and sales.<br/>  
-- Integrated semantic product search using OpenAI API and Upstash vector DB.<br/>  
-- Automated order tracking via WhatsApp API and Zapier for business owners.<br/>  
-- Developed a real-time sales dashboard to track history and visualize growth.<br/>  
-- Increased monthly sales by 800 through automated message replies.<br/>  
-- Enhanced customer support with error handling using Sentry.<br/>  `,
         contentPosition: 'l',
-        Images:
-            [
-                "https://utfs.io/f/gI5KGu6XhByvC9bRoBd8nScyRUxJWeAOsl4NkvquFP0GjhbT",
-                "https://utfs.io/f/gI5KGu6XhByvV1WgdtqHk9cq4dM8jN3nYPzTfbg7pKosGQRJ",
-                "https://utfs.io/f/gI5KGu6XhByvicBNZFkxPsuL9MBGEowyvq2jIiDeQXW0YSgN",
-                "https://utfs.io/f/gI5KGu6XhByvkxcH26IUnIcYSJt8iCeg19OMsXzEF4NaT3WA",
-                "https://utfs.io/f/gI5KGu6XhByvYt7KiRGrgZsf8mCzvUMGFo4dckPpw6aS9HnI"
-            ]
-
+        Images: ["https://utfs.io/f/gI5KGu6XhByvSGlTOUFOEFGLpNI5UuKM1PagcroJwnTxCY08", "https://utfs.io/f/gI5KGu6XhByvKwXHcsJqoeCHMnrIJajGZ0Tg8Qt32zbFBW4m"]
     },
     {
         id: 4,
