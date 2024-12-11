@@ -1,14 +1,13 @@
 'use client';
 import { motion, useInView } from 'framer-motion';
-import { DollarSign, Eye, Triangle, ZoomIn } from 'lucide-react';
-import { Dispatch, ReactNode, SetStateAction, useEffect, useRef, useState } from 'react';
+import { Dispatch, SetStateAction, useEffect, useRef, useState } from 'react';
 import { ImageSwiper } from './image-carousel';
 
 const SwapColumnFeatures = () => {
     const [featureInView, setFeatureInView] = useState<FeatureType>(features[0]!);
 
     return (
-        <section className="relative mx-auto max-w-7xl">
+        <section className="relative mx-auto max-w-7xl ">
             <SlidingFeatureDisplay featureInView={featureInView} />
             {/* Offsets the height of SlidingFeatureDisplay so that it renders on top of Content to start */}
             <div className="-mt-[100vh] hidden md:block" />
@@ -31,7 +30,7 @@ const SlidingFeatureDisplay = ({ featureInView }: { featureInView: FeatureType }
                 layout
                 transition={{
                     type: 'spring',
-                    stiffness: 400,
+                    stiffness: 300,
                     damping: 20,
                 }}
                 className="h-fit w-3/5 rounded-xl p-8"
@@ -63,7 +62,7 @@ const Content = ({
     return (
         <section
             ref={ref}
-            className="relative z-0 flex h-fit md:h-screen"
+            className="relative z-0 flex h-fit md:h-screen "
             style={{
                 justifyContent: featureInView.contentPosition === 'l' ? 'flex-start' : 'flex-end',
             }}
@@ -77,9 +76,9 @@ const Content = ({
                     <span className="rounded-full bg-indigo-600 px-2 py-1.5 text-xs font-medium text-white">
                         {featureInView.callout}
                     </span>
-                    <p className="my-3 text-4xl font-bold">{featureInView.title}</p>
+                    <p className="my-3 text-2xl md:text-4xl font-bold">{featureInView.title}</p>
                     <p
-                        className="text-slate-500"
+                        className="text-slate-500 hidden md:block"
                         dangerouslySetInnerHTML={{ __html: featureInView.description }}
                     />
 
@@ -99,7 +98,7 @@ const Content = ({
 
 const ExampleFeature = ({ featureInView }: { featureInView: FeatureType }) => {
     return (
-        <div className="h-96 w-full rounded-xl bg-slate-800 shadow-xl">
+        <div className="md:h-96 aspect-video w-full rounded-xl bg-slate-800 shadow-xl">
             <ImageSwiper images={featureInView.Images ?? []} />
         </div>
     );
@@ -114,7 +113,6 @@ type FeatureType = {
     description: string;
     contentPosition: 'l' | 'r';
     Images?: string[];
-    Icon: ReactNode;
 
 };
 
@@ -130,7 +128,6 @@ const features: FeatureType[] = [
 - Applied repository pattern for maintainable, modular code.<br/>  
 - Automated attendance, fee collection, and reporting to enhance efficiency.<br/>  `,
         contentPosition: 'r',
-        Icon: <Eye />,
         Images: [
             "https://utfs.io/f/gI5KGu6XhByvHoWlFv7KJe0GxYR6lXW85ygtwQuIT3kcEjv7",
             "https://utfs.io/f/gI5KGu6XhByvHJFMEK7KJe0GxYR6lXW85ygtwQuIT3kcEjv7",
@@ -150,12 +147,11 @@ const features: FeatureType[] = [
 - Implemented AWS S3 for image uploads and Next.js Image for optimizations.<br/>  
 - Developed efficient API endpoints for fee and salary calculations, boosting scalability.<br/>  `,
         contentPosition: 'r',
-        Icon: <ZoomIn />,
         Images: ["https://images.unsplash.com/photo-1629198688000-71f23e745b6e?ixid=M3w2MjE1NTV8MHwxfHNlYXJjaHwxfHxwcm9kdWN0c3xlbnwwfHx8fDE3MzM3Mjk3ODZ8MA&ixlib=rb-4.0.3", "https://images.unsplash.com/photo-1676906242973-739577556387?ixid=M3w2MjE1NTV8MHwxfHNlYXJjaHwzfHxhZG1pbiUyMHBhbmVsfGVufDB8fHx8MTczMzcyOTg2M3ww&ixlib=rb-4.0.3"]
     }, {
         id: 3,
-        callout: 'Have fun',
-        title: "Let's party",
+        callout: 'Eze / ToysNPark / Contract',
+        title: "E-commerce",
         description:
             `- Built an e-commerce platform with an admin panel for managing orders, products, and sales.<br/>  
 - Integrated semantic product search using OpenAI API and Upstash vector DB.<br/>  
@@ -164,17 +160,29 @@ const features: FeatureType[] = [
 - Increased monthly sales by 800 through automated message replies.<br/>  
 - Enhanced customer support with error handling using Sentry.<br/>  `,
         contentPosition: 'l',
-        Icon: <Triangle />,
-        Images: ["https://images.unsplash.com/photo-1676906242973-739577556387?ixid=M3w2MjE1NTV8MHwxfHNlYXJjaHwzfHxhZG1pbiUyMHBhbmVsfGVufDB8fHx8MTczMzcyOTg2M3ww&ixlib=rb-4.0.3", "https://images.unsplash.com/photo-1629198688000-71f23e745b6e?ixid=M3w2MjE1NTV8MHwxfHNlYXJjaHwxfHxwcm9kdWN0c3xlbnwwfHx8fDE3MzM3Mjk3ODZ8MA&ixlib=rb-4.0.3"]
+        Images:
+            [
+                "https://utfs.io/f/gI5KGu6XhByvC9bRoBd8nScyRUxJWeAOsl4NkvquFP0GjhbT",
+                "https://utfs.io/f/gI5KGu6XhByvV1WgdtqHk9cq4dM8jN3nYPzTfbg7pKosGQRJ",
+                "https://utfs.io/f/gI5KGu6XhByvicBNZFkxPsuL9MBGEowyvq2jIiDeQXW0YSgN",
+                "https://utfs.io/f/gI5KGu6XhByvkxcH26IUnIcYSJt8iCeg19OMsXzEF4NaT3WA",
+                "https://utfs.io/f/gI5KGu6XhByvYt7KiRGrgZsf8mCzvUMGFo4dckPpw6aS9HnI"
+            ]
 
     },
     {
         id: 4,
-        callout: 'Get paid',
-        title: 'Cha-ching!',
+        callout: 'Yatri-Supply / Web-Developer intern',
+        title: 'E-commerce',
         description:
-            'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor iusto quaerat qui, illo incidunt suscipit fugiat distinctio officia earum eius quae officiis quis harum animi.',
+            `- Created a responsive e-commerce platform with an intuitive user interface.<br/>  
+- Implemented secure RESTful APIs with JWT-based authentication.<br/>  
+- Developed a task management system with streamlined cart and checkout features./>  `,
         contentPosition: 'l',
-        Icon: <DollarSign />,
+        Images:
+            [
+                "https://utfs.io/f/gI5KGu6XhByvXItnUdS8Y6LR3iEMwOxVhrlC24U9NueJBKzG",
+                "https://utfs.io/f/gI5KGu6XhByvV80y7LHk9cq4dM8jN3nYPzTfbg7pKosGQRJu",
+            ]
     },
 ];

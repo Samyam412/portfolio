@@ -5,14 +5,14 @@ import { HeroNav } from '~/components/hero-navbar';
 
 const HomePage = () => {
     return (
-        <div>
-            <div className="flex h-screen max-h-screen w-full flex-col justify-between ">
+        <div className='flex flex-col w-full overflow-clip'>
+            <div id='#home' className="flex h-screen max-h-screen flex-col justify-between ">
                 <HeroNav />
                 <HeroBody />
                 <HeroFooter />
             </div>
             <CareerHeader />
-        </div>
+        </div >
     );
 };
 
