@@ -142,7 +142,7 @@ const features: FeatureType[] = [
             "https://utfs.io/f/gI5KGu6XhByvG6cJPqz3YiIBJo78GT1MlnRPu9OVhLUHW2jd",
             "https://utfs.io/f/gI5KGu6XhByvMh2rKmV30SpqHPXViLyTkCeAQU9xJl4cgadm"
         ]
-    },
+    }
     , {
         id: 2,
         callout: 'Full-Stack Developer',
