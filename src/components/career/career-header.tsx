@@ -3,11 +3,11 @@ import SwapColumnFeatures from './swap-column';
 
 export function CareerHeader() {
     return (
-        <div className="flex flex-col items-center ">
-            <h1 className="text-xl md:text-2xl">Career</h1>
-            <h1 className="flex justify-center gap-2">
-                Scroll down <ArrowDown className="animate-bounce" />
+        <div id='projects' className="flex flex-col items-center ">
+            <h1 className=" flex gap-2 text-xl items-center md:text-2xl">Career
+                <ArrowDown className="animate-bounce" />
             </h1>
+
             <div className="w-full ">
                 <SwapColumnFeatures />
             </div>

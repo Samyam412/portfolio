@@ -78,7 +78,7 @@ const Content = ({
                     </span>
                     <p className="my-3 text-2xl md:text-4xl font-bold">{featureInView.title}</p>
                     <p
-                        className="text-slate-500 hidden md:block"
+                        className="text-slate-500 hidden text-sm md:block"
                         dangerouslySetInnerHTML={{ __html: featureInView.description }}
                     />
 
@@ -87,9 +87,17 @@ const Content = ({
                     initial={{ opacity: 0, y: 25 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, ease: 'easeInOut' }}
-                    className="mt-8 block md:hidden"
+                    className="md:mt-8 block md:hidden"
                 >
                     <ExampleFeature featureInView={featureInView} />
+                    <p
+                        className="text-slate-500 mt-4 md:hidden text-sm "
+                        dangerouslySetInnerHTML={{ __html: featureInView.description }}
+                    />
+
+
+
+
                 </motion.div>
             </div>
         </section>
@@ -119,8 +127,8 @@ type FeatureType = {
 const features: FeatureType[] = [
     {
         id: 1,
-        callout: 'Maheswori Group / Full-Stack Developer',
-        title: 'Multi-Tenant SMS',
+        callout: 'Full-Stack Developer',
+        title: 'Maheswori Group',
         description:
             `- Developed a multi-tenant school management platform with Next.js for 6000+ users.<br/>  
 - Designed scalable data storage using PostgreSQL and Drizzle ORM.<br/>  
@@ -137,8 +145,9 @@ const features: FeatureType[] = [
     },
     {
         id: 2,
-        callout: 'Shree Harikul / Associate Software Developer',
-        title: "School Management System",
+        callout: 'Associate Software Developer',
+        title: "Shree Harikul",
+
         description:
             `- Redesigned a school management system with Next.js and role-based access control.<br/>  
 - Integrated Kinde Auth using scalable APIs and webhooks.<br/>  
@@ -150,8 +159,8 @@ const features: FeatureType[] = [
         Images: ["https://images.unsplash.com/photo-1629198688000-71f23e745b6e?ixid=M3w2MjE1NTV8MHwxfHNlYXJjaHwxfHxwcm9kdWN0c3xlbnwwfHx8fDE3MzM3Mjk3ODZ8MA&ixlib=rb-4.0.3", "https://images.unsplash.com/photo-1676906242973-739577556387?ixid=M3w2MjE1NTV8MHwxfHNlYXJjaHwzfHxhZG1pbiUyMHBhbmVsfGVufDB8fHx8MTczMzcyOTg2M3ww&ixlib=rb-4.0.3"]
     }, {
         id: 3,
-        callout: 'Eze / ToysNPark / Contract',
-        title: "E-commerce",
+        callout: 'Full-Stack Developer',
+        title: "Eze / ToysNpark",
         description:
             `- Built an e-commerce platform with an admin panel for managing orders, products, and sales.<br/>  
 - Integrated semantic product search using OpenAI API and Upstash vector DB.<br/>  
@@ -172,12 +181,12 @@ const features: FeatureType[] = [
     },
     {
         id: 4,
-        callout: 'Yatri-Supply / Web-Developer intern',
-        title: 'E-commerce',
+        callout: 'Web-Development Intern',
+        title: 'Yatri-Supply',
         description:
             `- Created a responsive e-commerce platform with an intuitive user interface.<br/>  
 - Implemented secure RESTful APIs with JWT-based authentication.<br/>  
-- Developed a task management system with streamlined cart and checkout features./>  `,
+- Developed a task management system with streamlined cart and checkout features.`,
         contentPosition: 'l',
         Images:
             [

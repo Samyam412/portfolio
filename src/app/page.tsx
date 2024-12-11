@@ -6,7 +6,7 @@ import { HeroNav } from '~/components/hero-navbar';
 const HomePage = () => {
     return (
         <div className='flex flex-col w-full overflow-clip'>
-            <div id='#home' className="flex h-screen max-h-screen flex-col justify-between ">
+            <div id='home' className="flex h-screen max-h-screen flex-col justify-between ">
                 <HeroNav />
                 <HeroBody />
                 <HeroFooter />
