@@ -6,7 +6,7 @@ const items: DockItems[] = [
     //todo make it redirect to the correct page
     { title: "Home", icon: <House />, href: "#home" },
     { title: "Projects", icon: <Briefcase />, href: "#projects" },
-    { title: "About Me", icon: <IdCard />, href: "#about" },
+    { title: "About Me", icon: <IdCard />, href: "#skills" },
     { title: "Contact me", icon: <Contact />, href: "#contact" },
 ];
 export function HeroNav() {
