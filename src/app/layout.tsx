@@ -25,9 +25,10 @@ export default function RootLayout({
             lang="en"
             className={`${roboto.className} bg-[#0A0A0A] text-lg text-[#FFFFE6]`}
         >
-            <body className="">
+            <body className="h-full ">
                 <Toaster />
                 {children}
+
                 <Footer />
             </body>
         </html>
