@@ -1,6 +1,6 @@
 'use client';
 import { motion, useInView } from 'framer-motion';
-import { Dispatch, SetStateAction, useEffect, useRef, useState } from 'react';
+import { type Dispatch, type SetStateAction, useEffect, useRef, useState } from 'react';
 import { ImageSwiper } from './image-carousel';
 
 const SwapColumnFeatures = () => {
@@ -57,7 +57,7 @@ const Content = ({
         if (isInView) {
             setFeatureInView(featureInView);
         }
-    }, [isInView]);
+    }, [featureInView, isInView, setFeatureInView]);
 
     return (
         <section
@@ -130,10 +130,10 @@ const features: FeatureType[] = [
         callout: 'Full-Stack Developer',
         title: 'Maheswori Group',
         description:
-            `- Developed a multi-tenant school management platform with Next.js for 6000+ users.<br/>  
-- Designed scalable data storage using PostgreSQL and Drizzle ORM.<br/>  
-- Reduced deployment time by 60% with Docker containerization.<br/>  
-- Applied repository pattern for maintainable, modular code.<br/>  
+            `- Developed a multi-tenant school management platform with Next.js for 6000+ users.<br/>
+- Designed scalable data storage using PostgreSQL and Drizzle ORM.<br/>
+- Reduced deployment time by 60% with Docker containerization.<br/>
+- Applied repository pattern for maintainable, modular code.<br/>
 - Automated attendance, fee collection, and reporting to enhance efficiency.<br/>  `,
         contentPosition: 'r',
         Images: [
@@ -148,11 +148,11 @@ const features: FeatureType[] = [
         callout: 'Full-Stack Developer',
         title: "Eze / ToysNpark",
         description:
-            `- Built an e-commerce platform with an admin panel for managing orders, products, and sales.<br/>  
-- Integrated semantic product search using OpenAI API and Upstash vector DB.<br/>  
-- Automated order tracking via WhatsApp API and Zapier for business owners.<br/>  
-- Developed a real-time sales dashboard to track history and visualize growth.<br/>  
-- Increased monthly sales by 800 through automated message replies.<br/>  
+            `- Built an e-commerce platform with an admin panel for managing orders, products, and sales.<br/>
+- Integrated semantic product search using OpenAI API and Upstash vector DB.<br/>
+- Automated order tracking via WhatsApp API and Zapier for business owners.<br/>
+- Developed a real-time sales dashboard to track history and visualize growth.<br/>
+- Increased monthly sales by 800 through automated message replies.<br/>
 - Enhanced customer support with error handling using Sentry.<br/>  `,
         contentPosition: 'r',
         Images:
@@ -171,11 +171,11 @@ const features: FeatureType[] = [
         title: "Shree Harikul",
 
         description:
-            `- Redesigned a school management system with Next.js and role-based access control.<br/>  
-- Integrated Kinde Auth using scalable APIs and webhooks.<br/>  
-- Improved system metrics with telemetry and contextual API logging.<br/>  
-- Built a customizable Admin Panel for content management.<br/>  
-- Implemented AWS S3 for image uploads and Next.js Image for optimizations.<br/>  
+            `- Redesigned a school management system with Next.js and role-based access control.<br/>
+- Integrated Kinde Auth using scalable APIs and webhooks.<br/>
+- Improved system metrics with telemetry and contextual API logging.<br/>
+- Built a customizable Admin Panel for content management.<br/>
+- Implemented AWS S3 for image uploads and Next.js Image for optimizations.<br/>
 - Developed efficient API endpoints for fee and salary calculations, boosting scalability.<br/>  `,
         contentPosition: 'l',
         Images: ["https://utfs.io/f/gI5KGu6XhByvSGlTOUFOEFGLpNI5UuKM1PagcroJwnTxCY08", "https://utfs.io/f/gI5KGu6XhByvKwXHcsJqoeCHMnrIJajGZ0Tg8Qt32zbFBW4m"]
@@ -185,8 +185,8 @@ const features: FeatureType[] = [
         callout: 'Web-Development Intern',
         title: 'Yatri-Supply',
         description:
-            `- Created a responsive e-commerce platform with an intuitive user interface.<br/>  
-- Implemented secure RESTful APIs with JWT-based authentication.<br/>  
+            `- Created a responsive e-commerce platform with an intuitive user interface.<br/>
+- Implemented secure RESTful APIs with JWT-based authentication.<br/>
 - Developed a task management system with streamlined cart and checkout features.`,
         contentPosition: 'l',
         Images:

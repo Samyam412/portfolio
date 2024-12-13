@@ -2,7 +2,7 @@
 
 import {
     AnimatePresence,
-    MotionValue,
+    type MotionValue,
     motion,
     useMotionValue,
     useSpring,
@@ -12,7 +12,7 @@ import Link from "next/link";
 import { useRef, useState } from "react";
 import { Menu, X } from "lucide-react";
 import { cn } from "~/lib/utils";
-import { DockItems } from "./hero-footer";
+import { type DockItems } from "./hero-footer";
 
 interface AnimatedDockProps {
     items: DockItems[];

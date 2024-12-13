@@ -82,8 +82,8 @@ export const ImageSwiper: React.FC<{ images: string[]; className?: string; }> = 
                     return (
                         <motion.div
                             key={i}
-                            className="h-full w-full shrink-0 overflow-hidden bg-neutral-800 object-cover first:rounded-l-[inherit] last:rounded-r-[inherit]">
-                            <img alt="Project Images" src={src} className="pointer-events-none object-cover" />
+                            className="h-full relative w-full shrink-0 overflow-hidden bg-neutral-800 object-cover first:rounded-l-[inherit] last:rounded-r-[inherit]">
+                            <Image fill alt="Project Images" src={src} className="pointer-events-none object-cover" />
                         </motion.div>
                     )
                 })}

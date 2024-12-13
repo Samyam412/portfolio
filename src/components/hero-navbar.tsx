@@ -1,6 +1,6 @@
 import { Briefcase, Circle, Contact, House, IdCard } from "lucide-react";
 import { SmallDock } from "./dock";
-import { DockItems } from "./hero-footer";
+import { type DockItems } from "./hero-footer";
 import Link from "next/link";
 
 const items: DockItems[] = [

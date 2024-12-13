@@ -2,7 +2,7 @@
 import { twMerge } from "tailwind-merge";
 import { MotionConfig, motion } from "framer-motion";
 import { ArrowDown, Linkedin } from "lucide-react";
-import { ReactNode } from "react";
+import { type ReactNode } from "react";
 import { HoverIcon } from "./skills-icon";
 import PosgresIcon from "./skills-icons/postgres";
 import TypescriptIcon from "./skills-icons/typescript";
@@ -119,14 +119,14 @@ const Card = ({
                             </p>
                             <div className="transition-[margin] text-sm duration-300 ease-in-out ">
                                 {text ? <div className="flex gap-2">
-                                    {text.map((item) => {
-                                        return <div className="flex items-center justify-center">{item}</div>
+                                    {text.map((item,_i) => {
+                                        return <div key={_i} className="flex items-center justify-center">{item}</div>
 
                                     })}
                                 </div> :
                                     <div className="size-fit">
                                         {icons?.map((icon) => {
-                                            return < HoverIcon icon={icon.icon} text={icon.title} />
+                                            return < HoverIcon key={icon.title} icon={icon.icon} text={icon.title} />
                                         })}
                                     </div>
                                 }
