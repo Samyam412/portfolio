@@ -26,6 +26,7 @@ import VercelIcon from "./skills-icons/vercel";
 import VpsIcon from "./skills-icons/vps";
 import CoolifyIcon from "./skills-icons/coolify";
 import SentryIcon from "./skills-icons/sentry";
+import { Badge } from "../ui/badge";
 
 
 export const SpringCards = () => {
@@ -191,7 +192,7 @@ const Card = ({
                             <div className="transition-[margin] text-sm duration-300 ease-in-out ">
                                 {text ? <div className="flex gap-2">
                                     {text.map((item, _i) => {
-                                        return <div key={_i} className="flex items-center justify-center">{item}</div>
+                                        return <Badge key={_i} className="flex mt-2 md:mt-4 items-center justify-center">{item}</Badge>
 
                                     })}
                                 </div> :
