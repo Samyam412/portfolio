@@ -1,12 +1,31 @@
 "use client"
 import { twMerge } from "tailwind-merge";
 import { MotionConfig, motion } from "framer-motion";
-import { ArrowDown, Linkedin } from "lucide-react";
+import { ArrowDown } from "lucide-react";
 import { type ReactNode } from "react";
 import { HoverIcon } from "./skills-icon";
 import PosgresIcon from "./skills-icons/postgres";
 import TypescriptIcon from "./skills-icons/typescript";
 import NodeJsIcon from "./skills-icons/node-js";
+import NextJsIcon from "./skills-icons/nextjs";
+import RedisIcon from "./skills-icons/redis";
+import PythonIcon from "./skills-icons/python";
+import GoIcon from "./skills-icons/go";
+import DjangoIcon from "./skills-icons/django";
+import ReactIcon from "./skills-icons/react";
+import FigmaIcon from "./skills-icons/figma";
+import TailwindCssIcon from "./skills-icons/tailwind";
+import FramerMotionIcon from "./skills-icons/framer-motion";
+import ShadcnUiIcon from "./skills-icons/shadcnui";
+import PhotoshopIcon from "./skills-icons/phptoshop";
+import PremiereProIcon from "./skills-icons/premiere-pro";
+import AwsLogo from "./skills-icons/aws";
+import LinuxIcon from "./skills-icons/linux";
+import DockerIcon from "./skills-icons/docker";
+import VercelIcon from "./skills-icons/vercel";
+import VpsIcon from "./skills-icons/vps";
+import CoolifyIcon from "./skills-icons/coolify";
+import SentryIcon from "./skills-icons/sentry";
 
 
 export const SpringCards = () => {
@@ -17,25 +36,77 @@ export const SpringCards = () => {
                     title="Frontend & Design"
                     subtitle="I love designing visually appealing systems with subtle animations, prioritizing UX over UI to create minimal, efficient solutions that help users solve problems without distractions."
                     className="bg-primary text-primary-foreground"
-                    icons={[{ icon: <Linkedin />, title: "Discord" }]}
+                    icons={[{ icon: <ReactIcon />, title: "React" },
+                    { icon: <TailwindCssIcon />, title: "TailwindCss" },
+                    {
+                        icon: <FigmaIcon />,
+                        title: "Figma"
+                    }, {
+                        icon: <FramerMotionIcon />,
+                        title: "Framer Motion"
+                    }, {
+                        icon: <ShadcnUiIcon />,
+                        title: "ShadCn"
+                    }, {
+                        icon: <PhotoshopIcon />,
+                        title: "Adobe Photoshop"
+                    }, {
+                        icon: <PremiereProIcon />,
+                        title: "Adobe Premiere Pro"
+                    }
+                    ]}
+
                 />
                 <Card
                     title="Backend"
                     subtitle="I find problem solving and creating complex systems fun. I strive to create scalable, reliable and secure systems."
                     className="bg-secondary sm:-translate-y-6"
-                    icons={[{ icon: <PosgresIcon />, title: "Postgres" }, { icon: <TypescriptIcon />, title: "Typescript" }, { icon: <NodeJsIcon />, title: "NodeJs" }]}
+                    icons={[{
+                        icon: <PosgresIcon />,
+                        title: "Postgres"
+                    }, {
+                        icon: <TypescriptIcon />,
+                        title: "Typescript"
+                    }, {
+                        icon: <NodeJsIcon />,
+                        title: "NodeJs"
+                    },
+                    {
+                        icon: <NextJsIcon />,
+                        title: "NextJs"
+                    }, {
+                        icon: <RedisIcon />,
+                        title: "Redis"
+                    }, {
+                        icon: <PythonIcon />,
+                        title: "Python"
+                    }, {
+                        icon: <GoIcon />,
+                        title: "GO"
+                    }, {
+                        icon: <DjangoIcon />,
+                        title: "Django"
+                    }]}
                 />
                 <Card
                     title="Cloud & DevOps"
                     subtitle="I have managed various cloud services for multiple projects."
                     className="bg-[#81BFDA]"
-                    icons={[]}
+                    icons={[
+                        { icon: <AwsLogo />, title: "AWS" },
+                        { icon: <LinuxIcon />, title: "Linux" },
+                        { icon: <DockerIcon />, title: "Docker" },
+                        { icon: <VercelIcon />, title: "Vercel" },
+                        { icon: <VpsIcon />, title: "Vps" },
+                        { icon: <CoolifyIcon />, title: "Coolify" },
+                        { icon: <SentryIcon />, title: "Sentry" },
+                    ]}
                 />
                 <Card
                     title="Management"
                     subtitle="I have worked with multiple clients and stakeholders to define projects that suit their needs and managed these projects from start to finish."
                     className="bg-[#FADA7A] text-primary-foreground sm:-translate-y-6"
-                    text={["Agile", "Scrum"]}
+                    text={["Agile", "Scrum", "Trello", "Notion"]}
                 />
             </div>
         </section>
@@ -119,7 +190,7 @@ const Card = ({
                             </p>
                             <div className="transition-[margin] text-sm duration-300 ease-in-out ">
                                 {text ? <div className="flex gap-2">
-                                    {text.map((item,_i) => {
+                                    {text.map((item, _i) => {
                                         return <div key={_i} className="flex items-center justify-center">{item}</div>
 
                                     })}
