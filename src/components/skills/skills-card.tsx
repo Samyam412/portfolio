@@ -192,7 +192,8 @@ const Card = ({
                             <div className="transition-[margin] text-sm duration-300 ease-in-out ">
                                 {text ? <div className="flex gap-2">
                                     {text.map((item, _i) => {
-                                        return <Badge key={_i} className="flex mt-2 md:mt-4 items-center justify-center">{item}</Badge>
+                                        return <Badge key={_i} className="flex mt-2 md:mt-4 items-center justify-center bg-primary cursor-default">{item}</Badge>
+
 
                                     })}
                                 </div> :
