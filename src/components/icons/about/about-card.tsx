@@ -16,13 +16,13 @@ export default function AboutMeCard() {
                         About Me
                     </h1>
                     <p className="mt-4 text-sm text-gray-500 md:text-lg">
-                        I am a full-stack software engineer with over 3 years of experience. I
+                        I am a full-stack software engineer with over 2 years of experience. I
                         specialize in developing web-based applications using NextJs and NodeJS for
                         backend, and ReactJS for frontend (including PWA and SPA). Client
                         satisfaction is my top priority, and I always adhere to best practices and
                         industry standards.
                     </p>
-                    <p className="mt-4  text-sm md:text-lg text-gray-500">
+                    <p className="mt-4  text-sm text-gray-500 md:text-lg">
                         I believe in delivering the best User Experience [UI/UX] with efficient and
                         seamless application performance. My experience spans all phases of the
                         software development life-cycle: from client-side UI, middle-tier MVC, API
