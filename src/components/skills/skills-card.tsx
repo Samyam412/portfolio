@@ -1,33 +1,32 @@
-"use client"
-import { twMerge } from "tailwind-merge";
-import { MotionConfig, motion } from "framer-motion";
-import { ArrowDown } from "lucide-react";
-import { type ReactNode } from "react";
-import { HoverIcon } from "./skills-icon";
-import PosgresIcon from "./skills-icons/postgres";
-import TypescriptIcon from "./skills-icons/typescript";
-import NodeJsIcon from "./skills-icons/node-js";
-import NextJsIcon from "./skills-icons/nextjs";
-import RedisIcon from "./skills-icons/redis";
-import PythonIcon from "./skills-icons/python";
-import GoIcon from "./skills-icons/go";
-import DjangoIcon from "./skills-icons/django";
-import ReactIcon from "./skills-icons/react";
-import FigmaIcon from "./skills-icons/figma";
-import TailwindCssIcon from "./skills-icons/tailwind";
-import FramerMotionIcon from "./skills-icons/framer-motion";
-import ShadcnUiIcon from "./skills-icons/shadcnui";
-import PhotoshopIcon from "./skills-icons/phptoshop";
-import PremiereProIcon from "./skills-icons/premiere-pro";
-import AwsLogo from "./skills-icons/aws";
-import LinuxIcon from "./skills-icons/linux";
-import DockerIcon from "./skills-icons/docker";
-import VercelIcon from "./skills-icons/vercel";
-import VpsIcon from "./skills-icons/vps";
-import CoolifyIcon from "./skills-icons/coolify";
-import SentryIcon from "./skills-icons/sentry";
-import { Badge } from "../ui/badge";
-
+'use client';
+import { twMerge } from 'tailwind-merge';
+import { MotionConfig, motion } from 'framer-motion';
+import { ArrowDown } from 'lucide-react';
+import { type ReactNode } from 'react';
+import { HoverIcon } from './skills-icon';
+import PosgresIcon from './skills-icons/postgres';
+import TypescriptIcon from './skills-icons/typescript';
+import NodeJsIcon from './skills-icons/node-js';
+import NextJsIcon from './skills-icons/nextjs';
+import RedisIcon from './skills-icons/redis';
+import PythonIcon from './skills-icons/python';
+import GoIcon from './skills-icons/go';
+import DjangoIcon from './skills-icons/django';
+import ReactIcon from './skills-icons/react';
+import FigmaIcon from './skills-icons/figma';
+import TailwindCssIcon from './skills-icons/tailwind';
+import FramerMotionIcon from './skills-icons/framer-motion';
+import ShadcnUiIcon from './skills-icons/shadcnui';
+import PhotoshopIcon from './skills-icons/phptoshop';
+import PremiereProIcon from './skills-icons/premiere-pro';
+import AwsLogo from './skills-icons/aws';
+import LinuxIcon from './skills-icons/linux';
+import DockerIcon from './skills-icons/docker';
+import VercelIcon from './skills-icons/vercel';
+import VpsIcon from './skills-icons/vps';
+import CoolifyIcon from './skills-icons/coolify';
+import SentryIcon from './skills-icons/sentry';
+import { Badge } from '../ui/badge';
 
 export const SpringCards = () => {
     return (
@@ -37,77 +36,50 @@ export const SpringCards = () => {
                     title="Frontend & Design"
                     subtitle="I love designing visually appealing systems with subtle animations, prioritizing UX over UI to create minimal, efficient solutions that help users solve problems without distractions."
                     className="bg-primary text-primary-foreground"
-                    icons={[{ icon: <ReactIcon />, title: "React" },
-                    { icon: <TailwindCssIcon />, title: "TailwindCss" },
-                    {
-                        icon: <FigmaIcon />,
-                        title: "Figma"
-                    }, {
-                        icon: <FramerMotionIcon />,
-                        title: "Framer Motion"
-                    }, {
-                        icon: <ShadcnUiIcon />,
-                        title: "ShadCn"
-                    }, {
-                        icon: <PhotoshopIcon />,
-                        title: "Adobe Photoshop"
-                    }, {
-                        icon: <PremiereProIcon />,
-                        title: "Adobe Premiere Pro"
-                    }
+                    icons={[
+                        { icon: <ReactIcon />, title: 'React' },
+                        { icon: <TailwindCssIcon />, title: 'TailwindCss' },
+                        { icon: <FigmaIcon />, title: 'Figma' },
+                        { icon: <FramerMotionIcon />, title: 'Framer Motion' },
+                        { icon: <ShadcnUiIcon />, title: 'ShadCn' },
+                        { icon: <PhotoshopIcon />, title: 'Adobe Photoshop' },
+                        { icon: <PremiereProIcon />, title: 'Adobe Premiere Pro' },
                     ]}
-
                 />
                 <Card
                     title="Backend"
                     subtitle="I find problem solving and creating complex systems fun. I strive to create scalable, reliable and secure systems."
                     className="bg-secondary sm:-translate-y-6"
-                    icons={[{
-                        icon: <PosgresIcon />,
-                        title: "Postgres"
-                    }, {
-                        icon: <TypescriptIcon />,
-                        title: "Typescript"
-                    }, {
-                        icon: <NodeJsIcon />,
-                        title: "NodeJs"
-                    },
-                    {
-                        icon: <NextJsIcon />,
-                        title: "NextJs"
-                    }, {
-                        icon: <RedisIcon />,
-                        title: "Redis"
-                    }, {
-                        icon: <PythonIcon />,
-                        title: "Python"
-                    }, {
-                        icon: <GoIcon />,
-                        title: "GO"
-                    }, {
-                        icon: <DjangoIcon />,
-                        title: "Django"
-                    }]}
+                    icons={[
+                        { icon: <PosgresIcon />, title: 'Postgres' },
+                        { icon: <TypescriptIcon />, title: 'Typescript' },
+                        { icon: <NodeJsIcon />, title: 'NodeJs' },
+                        { icon: <NextJsIcon />, title: 'NextJs' },
+                        { icon: <RedisIcon />, title: 'Redis' },
+                        { icon: <PythonIcon />, title: 'Python' },
+                        { icon: <GoIcon />, title: 'GO' },
+                        { icon: <DjangoIcon />, title: 'Django' },
+                    ]}
                 />
                 <Card
                     title="Cloud & DevOps"
                     subtitle="I have managed various cloud services for multiple projects."
                     className="bg-[#81BFDA]"
                     icons={[
-                        { icon: <AwsLogo />, title: "AWS" },
-                        { icon: <LinuxIcon />, title: "Linux" },
-                        { icon: <DockerIcon />, title: "Docker" },
-                        { icon: <VercelIcon />, title: "Vercel" },
-                        { icon: <VpsIcon />, title: "Vps" },
-                        { icon: <CoolifyIcon />, title: "Coolify" },
-                        { icon: <SentryIcon />, title: "Sentry" },
+                        { icon: <AwsLogo />, title: 'AWS' },
+                        { icon: <LinuxIcon />, title: 'Linux' },
+                        { icon: <DockerIcon />, title: 'Docker' },
+                        { icon: <VercelIcon />, title: 'Vercel' },
+                        { icon: <VpsIcon />, title: 'Vps' },
+                        { icon: <CoolifyIcon />, title: 'Coolify' },
+                        { icon: <SentryIcon />, title: 'Sentry' },
                     ]}
                 />
                 <Card
                     title="Management"
                     subtitle="I have worked with multiple clients and stakeholders to define projects that suit their needs and managed these projects from start to finish."
                     className="bg-[#FADA7A] text-primary-foreground sm:-translate-y-6"
-                    text={["Agile", "Scrum", "Trello", "Notion"]}
+                    text={['Agile', 'Scrum', 'Trello', 'Notion']}
                 />
             </div>
         </section>
@@ -115,8 +87,8 @@ export const SpringCards = () => {
 };
 
 interface iconProps {
-    icon: ReactNode
-    title: string
+    icon: ReactNode;
+    title: string;
 }
 
 const Card = ({
@@ -124,26 +96,25 @@ const Card = ({
     subtitle,
     className,
     icons,
-    text
+    text,
 }: {
     title: string;
     subtitle: string;
     className?: string;
-    icons?: iconProps[]
-    text?: string[]
-
+    icons?: iconProps[];
+    text?: string[];
 }) => {
     return (
         <MotionConfig
             transition={{
-                type: "spring",
+                type: 'spring',
                 bounce: 0.5,
             }}
         >
             <motion.div
                 whileHover="hovered"
                 className={twMerge(
-                    "group w-full border-2 border-black bg-emerald-300 backdrop-blur-xl",
+                    'group w-full border-2 border-black bg-emerald-300 backdrop-blur-xl',
                     className
                 )}
             >
@@ -158,10 +129,7 @@ const Card = ({
                             y: -8,
                         },
                     }}
-                    className={twMerge(
-                        "-m-0.5 border-2 border-black bg-emerald-300",
-                        className
-                    )}
+                    className={twMerge('-m-0.5 border-2 border-black bg-emerald-300', className)}
                 >
                     <motion.div
                         initial={{
@@ -175,7 +143,7 @@ const Card = ({
                             },
                         }}
                         className={twMerge(
-                            "relative -m-0.5 flex h-72 flex-col justify-between overflow-hidden border-2 border-black bg-emerald-300 p-8",
+                            'relative -m-0.5 flex h-full flex-col justify-between overflow-hidden border-2 border-black bg-emerald-300 p-8 md:h-72',
                             className
                         )}
                     >
@@ -185,29 +153,38 @@ const Card = ({
                         </p>
 
                         <div>
-
-                            <p className="transition-[margin] text-sm duration-300 ease-in-out group-hover:mb-10">
+                            <p className="text-sm transition-[margin] duration-300 ease-in-out group-hover:mb-10">
                                 {subtitle}
                             </p>
-                            <div className="transition-[margin] text-sm duration-300 ease-in-out ">
-                                {text ? <div className="flex gap-2">
-                                    {text.map((item, _i) => {
-                                        return <Badge key={_i} className="flex mt-2 md:mt-4 items-center justify-center bg-primary cursor-default">{item}</Badge>
-
-
-                                    })}
-                                </div> :
-                                    <div className="size-fit">
-                                        {icons?.map((icon) => {
-                                            return < HoverIcon key={icon.title} icon={icon.icon} text={icon.title} />
+                            <div className="text-sm transition-[margin] duration-300 ease-in-out ">
+                                {text ? (
+                                    <div className="flex gap-2">
+                                        {text.map((item, _i) => {
+                                            return (
+                                                <Badge
+                                                    key={_i}
+                                                    className="mt-2 flex cursor-default items-center justify-center bg-primary md:mt-4"
+                                                >
+                                                    {item}
+                                                </Badge>
+                                            );
                                         })}
                                     </div>
-                                }
+                                ) : (
+                                    <div className="">
+                                        {icons?.map((icon) => {
+                                            return (
+                                                <HoverIcon
+                                                    key={icon.title}
+                                                    icon={icon.icon}
+                                                    text={icon.title}
+                                                />
+                                            );
+                                        })}
+                                    </div>
+                                )}
                             </div>
-
-
                         </div>
-
 
                         <motion.svg
                             initial={{ rotate: 0 }}
@@ -215,14 +192,14 @@ const Card = ({
                             transition={{
                                 duration: 25,
                                 repeat: Infinity,
-                                repeatType: "loop",
-                                ease: "linear",
+                                repeatType: 'loop',
+                                ease: 'linear',
                             }}
                             style={{
-                                top: "0",
-                                right: "0",
-                                x: "50%",
-                                y: "-50%",
+                                top: '0',
+                                right: '0',
+                                x: '50%',
+                                y: '-50%',
                                 scale: 0.75,
                             }}
                             width="200"
@@ -240,7 +217,7 @@ const Card = ({
                                     fill="black"
                                     className="fill-black text-2xl font-black uppercase opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100"
                                 >
-                                    DESIGN • Code • TEST •  REPEAT • DESIGN • Code • TEST •  REPEAT •
+                                    DESIGN • Code • TEST • REPEAT • DESIGN • Code • TEST • REPEAT •
                                 </textPath>
                             </text>
                         </motion.svg>

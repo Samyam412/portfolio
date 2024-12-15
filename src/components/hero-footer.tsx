@@ -1,9 +1,9 @@
-"use client";
+'use client';
 
-import { type ReactNode } from "react";
-import { CalendarPlus, Github, Linkedin, Mail } from "lucide-react";
-import Discord from "./icons/discord";
-import AnimatedDock from "./dock";
+import { type ReactNode } from 'react';
+import { CalendarPlus, Github, Linkedin, Mail } from 'lucide-react';
+import Discord from './icons/discord';
+import AnimatedDock from './dock';
 
 export interface DockItems {
     title: string;
@@ -12,23 +12,23 @@ export interface DockItems {
 }
 
 export const DockItems: DockItems[] = [
-    { title: "Github", icon: <Github />, href: "https://github.com/Samyam412" },
+    { title: 'Github', icon: <Github />, href: 'https://github.com/Samyam412' },
     {
-        title: "LinkedIn",
+        title: 'LinkedIn',
         icon: <Linkedin />,
-        href: "https://www.linkedin.com/in/samyam-katwal",
+        href: 'https://www.linkedin.com/in/samyam-katwal',
     },
     {
-        title: "Discord",
+        title: 'Discord',
         icon: <Discord />,
-        href: "https://discordapp.com/users/samyam_36412",
+        href: 'https://discordapp.com/users/samyam_36412',
     },
     {
-        title: "Book Me",
+        title: 'Book Me',
         icon: <CalendarPlus />,
-        href: "https://cal.com/samyam-katwal",
+        href: 'https://cal.com/samyam-katwal',
     },
-    { title: "Email", icon: <Mail />, href: "mailto:samyamkatwalwork@gmail.com" },
+    { title: 'Email', icon: <Mail />, href: 'mailto:samyamkatwalwork@gmail.com' },
 ];
 
 export function HeroFooter() {

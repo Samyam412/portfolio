@@ -12,7 +12,7 @@ export const HoverIcon = ({ icon, text }: props) => {
     return (
         <div className="relative inline-block" >
             <div
-                className="relative size-14   p-3 transition-colors duration-200 cursor-pointer"
+                className="relative size-12 md:size-14   p-3 transition-colors duration-200 cursor-pointer"
                 onMouseEnter={() => setIsHovered(true)}
                 onMouseLeave={() => setIsHovered(false)}
                 aria-label={text}
