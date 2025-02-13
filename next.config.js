@@ -6,7 +6,7 @@
 /** @type {import("next").NextConfig} */
 const config = {
     images: {
-        domains: ["utfs.io", "images.unsplash.com"],
+        domains: ["utfs.io", "fo4ugc338q.ufs.sh"],
     },
 };
 
